@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First 100 Days | OPFS Head of Corporate Services</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: white;
+            color: #333;
+            line-height: 1.6;
+        }
+        .slide {
+            width: 100%;
+            min-height: 100vh;
+            padding: 40px;
+            box-sizing: border-box;
+            page-break-after: always;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            overflow: hidden;
+        }
+        h1 {
+            color: #8B2786;
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #B83C82;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #B83C82;
+            font-size: 1.8em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        h3 {
+            color: #8B2786;
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 12px;
+            font-size: 1.1em;
+        }
+        strong {
+            color: #8B2786;
+        }
+        .title-slide {
+            background: white;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid #8B2786;
+            min-height: 100vh;
+        }
+        .title-slide h1 {
+            border-bottom: none;
+            font-size: 3em;
+        }
+        .title-slide h2 {
+            font-size: 1.5em;
+            font-weight: normal;
+        }
+        .tagline {
+            font-style: italic;
+            margin-top: 40px;
+            color: #666;
+            font-size: 1.2em;
+        }
+        .philosophy-box {
+            background: #F0E8F5;
+            border: 2px solid #8B2786;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .phase-box {
+            background: #E8F4FD;
+            border-left: 5px solid #8B2786;
+            padding: 20px;
+            margin: 15px 0;
+        }
+        .phase-number {
+            color: #8B2786;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .trust-columns {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .trust-column {
+            flex: 1;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            border-top: 4px solid #8B2786;
+        }
+        .closing-box {
+            background: #F0E8F5;
+            border: 2px solid #8B2786;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 30px 0;
+        }
+        .context-highlight {
+            background: #fff0e5;
+            border-left: 4px solid #8B2786;
+            padding: 15px;
+            margin: 15px 0;
+            font-size: 0.95em;
+        }
+        .key-deliverable {
+            background: #e8f5e8;
+            border: 1px solid #4CAF50;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        /* PDF-specific optimizations */
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                margin: 0;
+                padding: 0;
+            }
+            
+            .slide {
+                page-break-inside: avoid;
+                page-break-after: always;
+                min-height: 95vh;
+                height: auto;
+                display: block;
+                margin: 0;
+                padding: 40px;
+                box-sizing: border-box;
+                overflow: hidden;
+            }
+            
+            .slide:last-child {
+                page-break-after: auto;
+            }
+            
+            * {
+                box-sizing: border-box;
+            }
+            
+            h1, h2, h3 {
+                page-break-after: avoid;
+            }
+            
+            .philosophy-box,
+            .phase-box,
+            .trust-columns,
+            .closing-box,
+            .key-deliverable {
+                page-break-inside: avoid;
+            }
+            
+            .trust-columns {
+                display: flex;
+                flex-wrap: nowrap;
+            }
+            
+            .trust-column {
+                flex: 1;
+                min-width: 0;
+            }
+        }
+
+        /* Additional print optimizations */
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        
+        /* Ensure consistent spacing */
+        .slide {
+            position: relative;
+        }
+        
+        /* Fix flex issues in PDF */
+        @media print {
+            .trust-columns {
+                display: table;
+                width: 100%;
+                table-layout: fixed;
+            }
+            
+            .trust-column {
+                display: table-cell;
+                vertical-align: top;
+                width: 33.33%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="slide title-slide">
+        <h1>My First 100 Days</h1>
+        <h2>Building the Bridge to Deliver the 2025-28 Strategic Plan</h2>
+        <p class="tagline">Head of Corporate Services - Shafquat Ahmed</p>
+    </div>
+
+    <div class="slide">
+        <h1>My Core Philosophy</h1>
+        <div class="philosophy-box">
+            <p><strong>The Strategic Plan is our destination.</strong><br>
+            <strong>My role is to build the bridge that gets us there.</strong></p>
+        </div>
+        <p>This bridge rests on two essential pillars:</p>
+        <ul>
+            <li><strong>Operational Excellence:</strong> Robust, compliant systems that ensure stability and maximise social impact.</li>
+            <li><strong>Deep, Trusting Relationships:</strong> Collaborative leadership that earns confidence across all levels - colleagues, peers, and Board.</li>
+        </ul>
+    </div>
+
+    <div class="slide">
+        <h1>The 100-Day Roadmap</h1>
+        <p style="margin-bottom: 30px;">Three focused phases with clear outcomes:</p>
+
+        <div class="phase-box">
+            <p class="phase-number">PHASE 1: Days 1-30</p>
+            <h3>Deep Immersion</h3>
+            <p>Understanding OPFS's culture, operational realities, and strategic context through direct engagement with colleagues, services, and stakeholders.</p>
+        </div>
+
+        <div class="phase-box">
+            <p class="phase-number">PHASE 2: Days 31-70</p>
+            <h3>Strategic Framework Development</h3>
+            <p>Co-creating the Corporate Strategy Framework with the senior leadership team, addressing resource allocation, funding models, and governance structures.</p>
+        </div>
+
+        <div class="phase-box">
+            <p class="phase-number">PHASE 3: Days 71-100</p>
+            <h3>Implementation & Performance Framework</h3>
+            <p>Establishing performance management frameworks, socialising plans, and creating sustainable review processes.</p>
+        </div>
+    </div>
+
+    <div class="slide">
+        <h1>Phase 1: Strategic Immersion (Days 1-30)</h1>
+        <h2>Understanding Our Mission in Practice</h2>
+        <ul>
+            <li><strong>Shadow frontline services</strong> across Scotland's diverse communities - from helplines to local authority partnerships</li>
+            <li><strong>Analyse financial sustainability</strong> - mapping and evaluating our entire funding ecosystem - from public sector and lottery funding to trusts, individual donations, corporate partnerships, and earned income. This will help build a diversified and resilient financial model</li>
+            <li><strong>Review governance structures</strong> - ensuring Office of the Scottish Charity Regulator (OSCR) compliance and Board effectiveness</li>
+            <li><strong>Assess operational capacity</strong> - understanding colleague workloads, systems, and resource constraints</li>
+        </ul>
+        <div class="key-deliverable">
+            <strong>Key Deliverable:</strong> Comprehensive situational analysis with initial recommendations for the senior leadership team.
+        </div>
+    </div>
+
+    <div class="slide">
+        <h1>Phase 2: Framework Development (Days 31-70)</h1>
+        <h2>Building Our Strategic Foundation</h2>
+        <ul>
+            <li><strong>Facilitate strategic workshops</strong> with the senior leadership team to address critical questions:
+                <ul>
+                    <li>Resource prioritisation across Scotland's 32 local authorities</li>
+                    <li>Optimal balance of restricted vs. unrestricted funding</li>
+                    <li>Service delivery models that maximise impact</li>
+                </ul>
+            </li>
+            <li><strong>Develop risk management protocols</strong> addressing funding, safeguarding, and operational risks</li>
+            <li><strong>Design performance management framework</strong> using Key Performance Indicators (KPIs), Most Significant Change (MSC) methodology, and Social Return on Investment (SROI) analysis to measure our social impact</li>
+        </ul>
+        <div class="key-deliverable">
+            <strong>Key Deliverable:</strong> Draft Corporate Strategy Framework ready for Board consultation.
+        </div>
+    </div>
+
+    <div class="slide">
+        <h1>Phase 3: Systems & Culture (Days 71-100)</h1>
+        <h2>Embedding Excellence</h2>
+        <ul>
+            <li><strong>Implement Performance Management Framework</strong> to measure poverty reduction impact and wellbeing outcomes</li>
+            <li><strong>Establish quarterly Strategy Reviews</strong> for senior leadership team with clear progress tracking against our corporate objectives</li>
+            <li><strong>Create Board dashboard</strong> providing a concise, one-page overview of organisational health across three critical areas: financial sustainability, risk, and impact metrics</li>
+            <li><strong>Launch communication protocols</strong> ensuring transparency and no-surprises approach across the organisation</li>
+        </ul>
+        <div class="key-deliverable">
+            <strong>Key Deliverable:</strong> Fully operational performance and governance frameworks with documented processes.
+        </div>
+    </div>
+
+    <div class="slide">
+        <h1>Building Trust Through Action</h1>
+        <p><strong>Trust is earned through transparent communication, consistent delivery, and leadership that demonstrates genuine care for people and mission.</strong></p>
+
+        <div class="trust-columns">
+            <div class="trust-column">
+                <h3>With Colleagues</h3>
+                <ul>
+                    <li><strong>Monthly check-ins</strong> across all locations, recognising hybrid working realities</li>
+                    <li><strong>Process simplification</strong> to reduce administrative burden</li>
+                    <li><strong>Workload advocacy</strong> ensuring sustainable, empathetic service delivery</li>
+                </ul>
+            </div>
+            <div class="trust-column">
+                <h3>With Senior Leadership Team</h3>
+                <ul>
+                    <li><strong>Weekly 1-on-1s</strong> focused on enabling their success</li>
+                    <li><strong>Transparent communication</strong> about challenges and opportunities</li>
+                    <li><strong>Collaborative decision-making</strong> that strengthens team cohesion</li>
+                </ul>
+            </div>
+            <div class="trust-column">
+                <h3>With the Board</h3>
+                <ul>
+                    <li><strong>Clear reporting</strong> on strategic progress and compliance</li>
+                    <li><strong>Proactive risk management</strong> with mitigation plans</li>
+                    <li><strong>Strategic insights</strong> that inform governance decisions</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <h1>My Commitment to OPFS</h1>
+        <div class="closing-box">
+            <p><strong>By Day 100, OPFS will have:</strong></p>
+            <ul>
+                <li>A robust <strong>Corporate Strategy Framework</strong> co-created with the leadership team</li>
+                <li>Clear <strong>Performance Management Framework</strong> tracking real-world impact</li>
+                <li>Strengthened <strong>governance and risk management</strong> processes</li>
+                <li>A culture of <strong>transparency and collaboration</strong> at all levels</li>
+            </ul>
+        </div>
+
+        <div class="context-highlight">
+            <strong>My ultimate goal:</strong> To ensure our corporate services provide the strongest possible foundation for the life-changing work you do - challenging poverty and transforming lives across Scotland.
+        </div>
+
+        <p style="text-align: center; font-size: 1.2em; color: #8B2786; margin-top: 30px;">
+            <strong>I am ready to build this bridge together.</strong>
+        </p>
+    </div>
+
+</body>
+</html>
